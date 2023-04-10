@@ -1,0 +1,29 @@
+.count-down {
+    display: flex;
+    border-bottom: 8px solid white;
+    border-top: 8px solid white;
+    padding: 10px;
+    gap: 30px;
+}
+
+.count {
+    margin-top: -40px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-section {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    gap: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
