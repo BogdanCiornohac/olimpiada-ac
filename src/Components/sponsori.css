@@ -10,3 +10,10 @@
     background-color:  #9DC08B; 
 }
 
+@media screen and (max-width: 450px) {
+    .sponsor{
+        height: 125px;
+        width: 275px;
+    }
+}
+

@@ -83,7 +83,7 @@ export default function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0}>
+        <ParallaxLayer offset={0} onClick={() => parallax.current.scrollTo(1)}>
           <div className='wrap'>
             <div className='first-container'>
               <div className='scoreboard'>
@@ -96,9 +96,12 @@ export default function App() {
           </div>
         </ParallaxLayer>
 
+      {/* <ParallaxLayer offset={0.9}>
+        <button onClick={() => parallax.current.scrollTo(1)} className='forms-button' style={{borderRadius:'100%', marginLeft:'10px'}}>↓</button>
+      </ParallaxLayer> */}
 
         {/* Mingi*/}
-        <ParallaxLayer offset={1.5} speed={-0.25} style={{ pointerEvents: 'none' }}>
+        <ParallaxLayer offset={1.5} speed={-0.25} style={{ pointerEvents: 'none' }} >
           <img src={ball} style={{ width: '12%', marginLeft: '75%' }} alt='cloud' />
         </ParallaxLayer>
         <ParallaxLayer offset={0.20} speed={-0.55} style={{ pointerEvents: 'none' }}>
@@ -152,7 +155,7 @@ export default function App() {
         <ParallaxLayer offset={1.1} speed={0.5}>
           <div className='calendar-container'>
             <div className='date-container'>
-              {dates.map((item, index) => <Days day={item.day} dispatch={dispatch} isActive={state[0][index]} />)}
+              {dates.map((item, index) => <Days day={item.day} index ={index} dispatch={dispatch} isActive={state[0][index]} />)}
             </div>
             <div className="text">
               <div className='text-container'>
@@ -171,7 +174,7 @@ export default function App() {
         </ParallaxLayer>
 
 
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={2}
           speed={-0.3}
           onClick={() => parallax.current.scrollTo(0)}
@@ -179,9 +182,9 @@ export default function App() {
             backgroundSize: '100%',
             backgroundPosition: 'center',
           }}
-        />
+        /> */}
 
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={0}
           speed={0.1}
           onClick={() => parallax.current.scrollTo(1)}
@@ -191,21 +194,11 @@ export default function App() {
             justifyContent: 'center',
           }}>
 
-          {/* <img src={socreboard} style={{ width: '100%' }} alt='server' /> */}
+         
 
-        </ParallaxLayer>
+        </ParallaxLayer> */}
 
-        <ParallaxLayer
-          offset={1}
-          speed={0.1}
-          onClick={() => parallax.current.scrollTo(2)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          {/* <img src={soccer} style={{ width: '40%' }} alt='bash' /> */}
-        </ParallaxLayer>
+       
 
       </Parallax>
     </div>

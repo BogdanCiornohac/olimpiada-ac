@@ -26,7 +26,7 @@ const responsive = {
 
 const SponsorsSlide = () => {
     return (
-        <div>
+        <div className="sponsor-container">
             <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={5000} infinite={true} partialVisbile={false} >
                     <div className="sponsor"><img src={energym} alt="Energim logo" style={{height:'75px'}}/></div>
                     <div className="sponsor "><img src={master} alt="Energim logo" style={{height:'150px'}}/></div>
