@@ -31,8 +31,8 @@ const SponsorsSlide = () => {
                     <div className="sponsor"><img src={energym} alt="Energim logo" style={{height:'75px'}}/></div>
                     <div className="sponsor "><img src={master} alt="Energim logo" style={{height:'150px'}}/></div>
                     <div className="sponsor "><img src={oana} style={{ height: '260px' }} alt="Energim logo"  /></div>
-                    <div className="sponsor">cacat</div>
-                    <div className="sponsor">plm</div>
+                    <div className="sponsor">va urma</div>
+                    <div className="sponsor">urmeaza</div>
             </Carousel>
         </div>
     );

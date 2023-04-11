@@ -39,7 +39,7 @@ export default function App() {
 
   const parallax = useRef(true)
   return (
-    <div style={{ width: '100%', height: '100%', background: '#253237' }}>
+    <div style={{ width: '100%', height: '100%', background: '#4B8438' }}>
       <Parallax ref={parallax} pages={3}>
         <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#AD273A', opacity: '100%' }} />
         <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#4B8438', opacity: '100%' }} />
