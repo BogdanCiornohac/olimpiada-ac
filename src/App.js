@@ -96,7 +96,7 @@ export default function App() {
           </div>
         </ParallaxLayer>
 
-      {/* <ParallaxLayer offset={0.9}>
+        {/* <ParallaxLayer offset={0.9}>
         <button onClick={() => parallax.current.scrollTo(1)} className='forms-button' style={{borderRadius:'100%', marginLeft:'10px'}}>↓</button>
       </ParallaxLayer> */}
 
@@ -154,8 +154,9 @@ export default function App() {
         {/* Calendarul de la pagina 2 */}
         <ParallaxLayer offset={1.1} speed={0.5}>
           <div className='calendar-container'>
+            <h1 className="fotbal-title">Aprilie</h1>
             <div className='date-container'>
-              {dates.map((item, index) => <Days day={item.day} index ={index} dispatch={dispatch} isActive={state[0][index]} />)}
+              {dates.map((item, index) => <Days day={item.day} index={index} dispatch={dispatch} isActive={state[0][index]} />)}
             </div>
             <div className="text">
               <div className='text-container'>
@@ -198,7 +199,7 @@ export default function App() {
 
         </ParallaxLayer> */}
 
-       
+
 
       </Parallax>
     </div>
